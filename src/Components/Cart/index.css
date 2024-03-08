@@ -1,0 +1,106 @@
+.my-bag-heading {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.my-cart-main-bg {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.no-items-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 65%;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.no-items-img {
+  max-width: 200px;
+}
+
+.continue-shopping-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-items-container {
+  list-style: none;
+  padding: 0;
+  width: 60%;
+}
+
+.checkout-container {
+  margin-top: 20px;
+  margin-left: auto;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  width: 30%;
+  padding: 20px;
+  height: 260px;
+}
+
+.order-summary-heading {
+  font-size: 20px;
+  color: #333;
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.amount-payable-text,
+.you-save-para {
+  font-size: 16px;
+  color: #555;
+}
+
+.total-amount,
+.you-save-amount {
+  font-weight: bold;
+}
+
+.proceed-to-checkout-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .my-cart-main-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .cart-items-container {
+    width: 100%;
+  }
+
+  .checkout-container {
+    margin-left: 0px;
+  }
+}

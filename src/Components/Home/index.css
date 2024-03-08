@@ -1,0 +1,40 @@
+.home-banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 20px;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.home-banner-heading {
+  color: black;
+  font-size: 40px;
+  font-family: "Bree Serif";
+  margin-bottom: 4px;
+}
+
+.home-banner-para {
+  color: black;
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-bottom: 4px;
+}
+
+.home-banner-button {
+  width: 140px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: skyblue;
+  border-radius: 8px;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-width: 0px;
+  font-size: 20px;
+  font-family: "Roboto";
+  margin-top: 5px;
+}

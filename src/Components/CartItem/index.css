@@ -1,0 +1,115 @@
+.cart-item {
+  list-style-type: none;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.cart-item-book-img {
+  height: 150px;
+  width: 200px;
+}
+
+.cart-item-book-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cart-item-book-name {
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 8px; /* Adjust margin as needed */
+  display: inline;
+  width: 100px;
+  overflow-x: hidden;
+}
+
+.cart-item-book-cost {
+  font-size: 16px; /* Adjust font size as needed */
+  margin-bottom: 8px; /* Adjust margin as needed */
+}
+
+.quantity-buttons-container {
+  display: flex; /* Display buttons in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.increase-button,
+.decrease-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Button border radius */
+  padding: 8px 12px; /* Adjust padding as needed */
+  font-size: 16px; /* Button text font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.increase-button:hover,
+.decrease-button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+.quantity {
+  margin: 0 12px; /* Adjust margin as needed */
+  font-size: 16px; /* Font size */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Button border radius */
+  padding: 8px 12px; /* Adjust padding as needed */
+  font-size: 16px; /* Button text font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Button background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .cart-item {
+    height: 350px;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .cart-item-book-img {
+    height: 100%;
+    width: 45%;
+  }
+
+  .cart-item-book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+  }
+
+  .cart-item-book-name {
+    display: block;
+    width: auto;
+  }
+
+  .quantity-buttons-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

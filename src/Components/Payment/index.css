@@ -1,0 +1,214 @@
+/* Base Styles */
+
+.payment-page-main-bg {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.payment-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-heading,
+.shipping-heading {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.email-input,
+.first-name-input,
+.last-name-input,
+.address-input,
+.city-input,
+.pincode-input,
+.number-input {
+  width: 97%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.country-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 12px;
+}
+
+.state-options {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.payment-form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.email-input:hover,
+.first-name-input:hover,
+.last-name-input:hover,
+.address-input:hover,
+.city-input:hover,
+.pincode-input:hover,
+.number-input:hover,
+.state-options:hover,
+.payment-button:hover {
+  border-color: #007bff;
+}
+
+.payment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Focus Styles */
+.email-input:focus,
+.first-name-input:focus,
+.last-name-input:focus,
+.address-input:focus,
+.city-input:focus,
+.pincode-input:focus,
+.number-input:focus,
+.state-options:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.payment-page-main-bg {
+  animation: fadeIn 0.5s ease;
+}
+.error-msg {
+  color: #dc3545; /* Red color */
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* Base Styles */
+.payment-success-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  align-self: center;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+.tick-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.greet-msg {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.continue-shopping-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continue-shopping-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 480px) {
+  .payment-form {
+    padding: 20px;
+  }
+  .email-input,
+  .first-name-input,
+  .last-name-input,
+  .address-input,
+  .city-input,
+  .pincode-input,
+  .number-input {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .state-options {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .payment-button {
+    font-size: 16px;
+    padding: 12px;
+    margin: 15px 0;
+  }
+  .payment-success-container {
+    padding: 15px;
+    max-width: 300px;
+  }
+
+  .tick-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .greet-msg {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .continue-shopping-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

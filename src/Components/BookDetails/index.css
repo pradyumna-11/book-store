@@ -1,0 +1,173 @@
+.book-details-main-bg {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.book-details-img {
+  height: 500px;
+  min-width: 50%;
+  max-width: 400px;
+}
+
+.specific-book-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 50%;
+  margin-left: auto;
+}
+
+.selected-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.selected-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.selected-price {
+  font-size: 16px;
+  color: #333;
+}
+
+.selected-price-amount {
+  font-weight: bold;
+  color: #007bff; /* blue color */
+}
+
+.selected-published-year {
+  font-size: 16px;
+  color: #333;
+}
+
+.selected-year {
+  font-weight: bold;
+}
+
+.authors {
+  font-size: 16px;
+  color: #777;
+}
+
+.selected-rating {
+  font-size: 16px;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+.quantity-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.increase-button,
+.decrease-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Button border radius */
+  padding: 8px 16px; /* Adjust padding as needed */
+  font-size: 16px; /* Button text font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.increase-button:hover,
+.decrease-button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+.quantity {
+  display: inline-block; /* Ensure paragraph behaves as inline-block */
+  margin: 0 8px; /* Adjust margin as needed */
+  font-size: 25px; /* Paragraph font size */
+  font-weight: bold;
+}
+
+.add-to-bag-button {
+  background-color: #28a745; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Button border radius */
+  padding: 12px 24px; /* Adjust padding as needed */
+  font-size: 16px; /* Button text font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin-top: 15px;
+}
+
+.add-to-bag-button:hover {
+  background-color: #218838; /* Button background color on hover */
+}
+
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.failure-img {
+  height: 200px;
+  width: 200px;
+}
+
+.failure-msg {
+  font-size: 20px;
+  font-family: "Bree Serif";
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.retry-books-button {
+  background-color: #24a0ed;
+  font-size: 17px;
+  padding: 6px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  border-width: 0px;
+  cursor: pointer;
+  outline: none;
+  height: 38px;
+  width: 100px;
+}
+
+.bag-para {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+@media screen and (max-width: 768px) {
+  .book-details-main-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .specific-book-details-container {
+    padding-left: 15px;
+  }
+  .book-details-img {
+    min-width: 100%;
+  }
+}
