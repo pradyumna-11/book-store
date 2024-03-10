@@ -47,7 +47,7 @@ class App extends Component {
           <Route exact path="/books/:isbn13" component={BookDetails} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/payment" component={Payment} />
-          <Route path="/not-found" component={NotFound} />
+          <Route exact path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
       </CartContext.Provider>
