@@ -42,7 +42,7 @@ class App extends Component {
         }}
       >
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/book-store" component={Home} />
           <Route exact path="/books" component={Books} />
           <Route exact path="/books/:isbn13" component={BookDetails} />
           <Route exact path="/cart" component={Cart} />
