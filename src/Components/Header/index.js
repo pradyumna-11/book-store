@@ -6,7 +6,7 @@ import "./index.css";
 
 const Header = () => (
   <nav className="navbar">
-    <Link to="/" className="link-style">
+    <Link to="/book-store" className="link-style">
       <button className="logo-button">
         <GiBookshelf size={60} color="black" />
         <span className="logo-text">Book Store</span>
